@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/metal_image"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/metal_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/metal_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/metal_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus5"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text="+5"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/metal_image"
+        app:layout_constraintTop_toBottomOf="@id/metal_name" />
+
+    <EditText
+        android:id="@+id/five_amount"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/metal_image"
+        app:layout_constraintTop_toBottomOf="@id/plus5"
+        android:inputType="number"
+        android:text=""
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/plus10"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text="+10"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/plus5"
+        app:layout_constraintTop_toBottomOf="@id/metal_name" />
+
+    <EditText
+        android:id="@+id/ten_amount"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/five_amount"
+        app:layout_constraintTop_toBottomOf="@id/plus10"
+        android:inputType="number"
+        android:text=""
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/plus15"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text="+15"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/plus10"
+        app:layout_constraintTop_toBottomOf="@id/metal_name" />
+
+    <EditText
+        android:id="@+id/fifteen_amount"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/ten_amount"
+        app:layout_constraintTop_toBottomOf="@id/plus15"
+        android:inputType="number"
+        android:text=""
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/plus20"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"
+        android:text="+20"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/plus15"
+        app:layout_constraintTop_toBottomOf="@id/metal_name" />
+
+
+    <EditText
+        android:id="@+id/twenty_amount"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/fifteen_amount"
+        app:layout_constraintTop_toBottomOf="@id/plus20"
+        android:inputType="number"
+        android:text=""
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/metal_amount"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:importantForAutofill="no"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/plus20"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metal_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
